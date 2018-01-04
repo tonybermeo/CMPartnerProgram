@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link>
+
+    <title>Code Review</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    table, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color:#0093d6;
+        font: 100%/1;
+    }
+
+    table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color:rgba(100,100,100,.2);
+        font: 100%/1;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Hotovo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>CloudMine Code Review Template</h1>
+        <p>This code review contains suggested remediation to address: security concerns, performance improvements and best coding practices.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button" onclick="window.location='https://www.atlassian.com/software/confluence'" target="_blank";>Confluence Sign-In &raquo;</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="window.location='https://cloudmine.io/docs/#/'" target="_blank";>Documentation Page &raquo;</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="window.location='https://cloudmineinc.com/contact'" target="_blank";>Support &raquo;</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" onclick="window.location='mailto:tbermeo@cloudmineinc.com?Subject=Code%20Review%20Questions'" target="_blank";>Email Your CloudMine Project Manager &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+    <p style="color:#443d3d">
+          This code review template is a summary of findings from: <textarea rows="1" cols="50">
+          Type application/code base being reviewed </textarea>
+            <form action="/action_page.php">
+              <input type="date" name="codereviewdate">
+              <input type="submit" value="Send">
+            </form>
+      </p>
+      <h2 style="color:#0093d6;">Groups of Findings</h2>
+      <p>
+      <ul>
+          <li>General Findings
+              <ul>
+                  <li>Findings that relate to entire project: i.e. security concerns</li>
+              </ul>
+          </li>
+          <li>Specific Findings
+              <ul>
+                  <li>Findings that relate specifically to the code being reviewed</li>
+              </ul>
+          </li>
+      </ul>
+      </p>
+      <h2 style="color:#0093d6;">Explanation of Findings</h2>
+      <p>
+          Each finding will contain the following: <br/>
+      <ul>
+          <li>Brief Summary of Finding</li>
+          <li>Suggested Remediation</li>
+          <li>Example of the code being referenced</li>
+      </ul>
+      </p>
+      <h2 style="color:#0093d6;">Impact Levels</h2>
+      <p>
+          Each code review item will also contain an impact which is divided into three groups: <br/> <br/>
+      </p>
+      <table style="width:50%">
+          <tr>
+              <th> Impact</th>
+              <th> Summary</th>
+          </tr>
+          <tr>
+              <td style="color:red" style="font-weight:bold";> Major</td>
+              <td> Should be fixed immediately. <br/>
+                  Presents security issues, risk of data consumption, etc.
+              </td>
+          </tr>
+          <tr>
+              <td> Normal</td>
+              <td> Should be fixed within a period of next iteration of development <br/>
+                  Includes: risk of bug, performance issues, etc.
+              </td>
+          </tr>
+          <tr>
+              <td style="color:blue";> Minor</td>
+              <td> Tip to improve quality <br/>
+                  Suggestions for best coding practice, etc.
+              </td>
+          </tr>
+      </table>
+      <p>
+          <h2 style="color:#0093d6" input="form-textbox";>General Findings</h2>
+          <h4 style="color:red" style="font-weight:bold";> Major Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+
+      </p>
+      <p>
+          <h4 style="font-weight:bold";> Normal Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+      </p>
+      <p>
+          <h4 style="color:blue" style="font-weight:bold";> Minor Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+      </p>
+      <br/>
+      <p>
+          <h2 style="color:#0093d6" input="form-textbox";>Specific Findings</h2>
+          <h4 style="color:red" style="font-weight:bold";> Major Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+
+      </p>
+      <p>
+          <h4 style="font-weight:bold";> Normal Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+      </p>
+      <p>
+          <h4 style="color:blue" style="font-weight:bold";> Minor Impact: </h4>
+          <h5> Summary: </h5> <textarea rows="1" cols="50"> Type summary here </textarea> <br/>
+          <h5> Suggested Remediation: </h5><textarea rows="3" cols="100"> Type suggested remediation here </textarea> <br/>
+          <h5> Code Examples from Reviewed Code Base: </h5><textarea rows="12" cols="100"> Paste code examples here </textarea> <br/>
+      </p>
+  </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2017 CloudMine, Inc. All rights reserved.<br/>
+        All brands and their products are trademarks or registered trademarks of their respective holders and should
+        be
+        noted as such.<br/>
+        <br/>
+        CloudMine LLC.<br/>
+        1217 Sansom St<br/>
+        FL6<br/>
+        Philadelphia, PA 19107<br/>
+        <br/>
+        October 2017<br/>
+        Version 1.0</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
