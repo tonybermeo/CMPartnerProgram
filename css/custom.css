@@ -1,0 +1,44 @@
+.jumbotron {
+        min-height: 500px;
+        width: 110vw;
+    	margin-left: -5vw;
+}
+
+#firstCategory {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+#secondCategory {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.navbar-inverse {
+	color: #3b90ce;
+}
+
+#lowerNav{
+	height: 95px;
+	width: 110vw;
+	margin-left: -5vw;
+	background-color: #3b90ce;
+}
+
+#logo{
+	padding-left: 110px;
+}
+
+#learnMoreButton{
+	padding-top: 10px;
+}
+
+#showcaseLearnMore {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.wrapper {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
