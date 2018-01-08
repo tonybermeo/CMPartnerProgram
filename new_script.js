@@ -2,8 +2,6 @@
              appid: '97e63038b4d8d04c9848d50a3eb072a8',
              apikey: '37c0cea7998e4c5f9486646843baee41'
          });
-
-
 //connecting to cloudmine app.
 
 
@@ -16,12 +14,7 @@ function createUser() {
 	var userTeam = document.getElementById('userTeam').value;
 	console.log(userTeam);
 
-	ws.createUser({email: userEmail, password: userPassword, team: userTeam});
-
-
-	//ws.createUser(userEmail, userPassword).on('success', function(data, response) {
-  //console.log(data);
-	//});
+	ws.createUser(userEmail, userPassword, {profile: {team: userTeam}});
 
 	console.log("successfully created user")
   alert("Thank you for signing up!");
@@ -36,9 +29,13 @@ var userLoginPassword = document.getElementById('userLoginPassword').value;
 console.log(userLoginPassword);
 
 ws.login(userLoginUsername, userLoginPassword).on('success', function(data, response) {
-	 console.log(data);
-	 	  alert("your session token is " + data.session_token);
+	 console.log(data.profile.team);
+   var team = data.profile.team;
+	 	 // alert("your session token is " + data.session_token);
+     document.cookie = "team=" + team;
   localStorage.setItem('cm_session', response.session_token);
+  localStorage.setItem('team', team);
+
  //window.location.href="login.html";         
 });
 }

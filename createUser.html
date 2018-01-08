@@ -16,8 +16,6 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
@@ -60,8 +58,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="#"> &copy; CloudMine Inc.</a>
         </div>
-       <!--  <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" action="javascript:loginWithCreds()">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control" id="userLoginEmail">
@@ -76,74 +75,50 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="container-fluid"> 
-    <div class="jumbotron">
-      
-      	<div class="row" id="lowerNav"><a class="navbar-brand" href="index.html"><img src="img/logo.png" id="logo"></a></div>
-       <center><h2 style="padding-top: 100px;">CloudMine Preferred Partner Program</h2></center>
-        <center><p>CloudMine's Preferred Development Partner Program .... blah blah blah</p></center>
-      </div> 
+    <div class="modal-body row">
+      <div class="col-md-2"></div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+        <div class="panel-heading">Create User</div>
+          <div class="panel-body">
+            <form id="createForm" form="create" action="javascript:createUser()">
+              <div class="form-group">
+                <label for="formGroupExampleInput">User Email</label>
+                <input type="text" class="form-control" id="userEmail" name="Email" placeholder="enter your email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="userPassword" placeholder="password">
+              </div>
+                <label for="password">Team</label>
+              <div class="form-group">
+                    <select name="Team" id="userTeam">
+                    <option value="fiat" selected>Please Select One...</option>
+                    <option value="devshops">Development Partners</option>
+                    <option value="integrationpartners">Integration Partners</option>
+                    </select>            
+              </div>
+              <button type="submit" class="btn btn-primary">Create New User</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
-  <!-- Icons Grid -->
-    <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h1>image here...</h1>
-              <h3>Integration Partners</h3>
-              <p class="lead mb-0">Blurb of our Integration Partner Program</p>
-            </div>
-          </div>
+      <hr>
 
-          <div class="col-lg-6">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
-              </div>
-              <h1>image here...</h1>
-              <h3>Development Teams</h3>
-              <p class="lead mb-0">Blurb of our Development Team Program</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      	<div id="showcaseLearnMore">
-      		  <button type="button" class="btn btn-default btn-lg btn-primary" id="learnMoreButton">Learn More!</button>
-      	</div>
-    </section>
-    <hr>
-       <div class="row no-gutters" id="secondCategory">
-          <div class="col-lg-6 text-white showcase-img"></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Development Partner section with new CloudMine logo?</h2>
-            <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et imperdiet nulla. Suspendisse enim risus, condimentum sit amet facilisis eu, gravida vitae dolor. Nunc gravida placerat leo, non sollicitudin felis tempor mollis. Cras at lacus sapien. Aenean id rutrum enim, ac rutrum sapien. Suspendisse a facilisis ligula. Praesent accumsan condimentum neque, consequat fermentum eros tristique eu. Maecenas mollis mollis tortor non semper. Cras laoreet iaculis purus. Mauris feugiat pulvinar velit, sed vehicula lacus interdum vel.</p>
-          </div>
-        </div>
-	<hr>
-        <div class="container-fluid p-0" id="firstCategory">
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white">
-          	<h2>Integration Partners with new CloudMine logo?</h2>
-          	<p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et imperdiet nulla. Suspendisse enim risus, condimentum sit amet facilisis eu, gravida vitae dolor. Nunc gravida placerat leo, non sollicitudin felis tempor mollis. Cras at lacus sapien. Aenean id rutrum enim, ac rutrum sapien. Suspendisse a facilisis ligula. Praesent accumsan condimentum neque, consequat fermentum eros tristique eu. Maecenas mollis mollis tortor non semper. Cras laoreet iaculis purus. Mauris feugiat pulvinar velit, sed vehicula lacus interdum vel.</p>
-          </div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          </div>
-        </div>
-      </div>
-    <hr>
-
-    <center><h1>Interested?</h1></center>
-    <div class="wrapper">
-    	<center><button type="button" class="btn btn-default btn-lg btn-primary" id="signUpButton">Sign Up Today!</button></center>
-	</div>
-    <center><div class="panel-footer">Panel Footer</div></center>
-
+      <footer>
+        <p> &nbsp; &copy; 2017 CloudMine, Inc. All rights reserved.<br/>
+        &nbsp; All brands and their products are trademarks or registered trademarks of their respective holders and should be noted as such.<br/>
+        <br/>
+        &nbsp; CloudMine LLC.<br/>
+        &nbsp; 1217 Sansom St<br/>
+        &nbsp; FL6<br/>
+        &nbsp; Philadelphia, PA 19107<br/>
+        <br/>
+        &nbsp; October 2017<br/>
+        &nbsp; Version 1.0</p>
+      </footer>
     </div> <!-- /container -->
 
 
